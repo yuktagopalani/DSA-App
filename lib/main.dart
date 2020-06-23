@@ -1,17 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
+
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  bool s=false;
+  void settheme(bool s)
+  {
+      if(s==true)
+      {
+      theme:
+      ThemeData.dark();
+      darkTheme:
+      ThemeData.dark();
+       }
+
+    else{
+      theme:
+      ThemeData.light();
+      darkTheme:
+      ThemeData.light();
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.dark(),
-        darkTheme: ThemeData.dark(),
+
+
 
         home: Scaffold(
           appBar: AppBar(
@@ -25,13 +45,17 @@ class MyApp extends StatelessWidget {
                   child: Text('Data Structures'),
 
                 ),
+
                 ListTile(
                   title:Text('Switch Theme'
                   ),
                   trailing: Icon(Icons.lightbulb_outline),
 
-                  onTap: (){
-                    Navigator.pop(context);
+                  onTap:(){
+
+
+                    settheme(true);
+                    Navigator.of(context).pop();
                   },
 
                 ),
@@ -49,6 +73,7 @@ class MyApp extends StatelessWidget {
                   ),
                   trailing: Icon(Icons.inbox),
                   onTap: (){
+
                     Navigator.pop(context);
                   },
 
@@ -58,6 +83,7 @@ class MyApp extends StatelessWidget {
                   ),
                   trailing: Icon(Icons.check_box_outline_blank),
                   onTap: (){
+                    print('Yukta');
                     Navigator.pop(context);
                   },
 
