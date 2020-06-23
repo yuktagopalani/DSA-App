@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438762712125",
+    "firebase_url": "https://dsa-app-5ff53.firebaseio.com",
+    "project_id": "dsa-app-5ff53",
+    "storage_bucket": "dsa-app-5ff53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438762712125:android:3b1178b9c39954d8e64e54",
+        "android_client_info": {
+          "package_name": "com.example.dsaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438762712125-hud2t011p15c5b57d6tajl7gpjd9hn7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1bedFIGiNuUH-08EGoW8yWqOH6WGXw4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438762712125-hud2t011p15c5b57d6tajl7gpjd9hn7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
