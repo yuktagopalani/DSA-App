@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:dsaapp/Inbuiltdatastructure.dart';
+//import 'package:dsaapp/Inbuiltdatastructure.dart';
 
 class Navdrawer extends StatelessWidget {
   @override
@@ -24,6 +26,8 @@ class Navdrawer extends StatelessWidget {
               trailing: Icon(Icons.home),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.of(context).pushNamed('/');
+
               },
             ),
             ListTile(
@@ -31,14 +35,16 @@ class Navdrawer extends StatelessWidget {
               trailing: Icon(Icons.apps),
               onTap: () {
                 Navigator.pop(context);
+                Navigator.of(context).pushNamed('/inb');
+
               },
             ),
             ListTile(
               title: Text('Abstract Data Structures'),
-              trailing: Icon(FontAwesomeIcons.tree),
+              trailing: Icon(Icons.device_hub),
               onTap: () {
-                print('Yukta');
                 Navigator.pop(context);
+                Navigator.of(context).pushNamed('/abs');
               },
             ),
           ],
